@@ -162,7 +162,7 @@ fun DashboardScreen(onSettings: () -> Unit) {
             }
 
             BigStat("TODAY", TimeConverter.formatReal(todayMin), "real time")
-            BigStat("COOKED UNITS", TimeConverter.format(todayMin), "the meme number")
+            BigStat("TOTAL (30 days)", TimeConverter.formatReal(weekMin), "recent playtime")
             BigStat("THIS WEEK", TimeConverter.formatReal(weekMin), "7-day total")
 
             if (roast.isNotEmpty()) {
